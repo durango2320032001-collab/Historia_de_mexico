@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de México</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* Encabezado principal */
+        header {
+            background: linear-gradient(90deg, #006847 0%, #ffffff 50%, #ce1126 100%);
+            color: #222;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #2c3e50;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Contenedor principal */
+        .contenedor {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Secciones */
+        section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #006847;
+            border-bottom: 2px solid #ce1126;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Imágenes */
+        .imagen {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        /* Adaptación para móviles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Historia de México</h1>
+        <p>Un recorrido por sus orígenes, transformaciones y legado</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#epoca-antigua">Época Antigua</a></li>
+            <li><a href="#conquista">Conquista y Colonia</a></li>
+            <li><a href="#independencia">Independencia</a></li>
+            <li><a href="#siglo-xix">Siglo XIX</a></li>
+            <li><a href="#revolucion">Revolución Mexicana</a></li>
+            <li><a href="#mexico-actual">México Actual</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="contenedor">
+
+        <!-- Sección: Época Antigua -->
+        <section id="epoca-antigua">
+            <h2>Época Antigua: Culturas Prehispánicas</h2>
+            <p>Antes de la llegada de los españoles, en el territorio que hoy conocemos como México florecieron grandes civilizaciones: los olmecas, mayas, zapotecas, teotihuacanos y mexicas, entre otros. Desarrollaron sistemas de escritura, astronomía, arquitectura y agricultura avanzada.</p>
+            <img src="img/teotihuacan.jpg" alt="Vista de las pirámides de Teotihuacán" class="imagen">
+            <p>Teotihuacán y Tenochtitlan fueron dos de las ciudades más grandes e importantes de América en su tiempo. Su legado se mantiene presente en la cultura, el idioma y las tradiciones actuales.</p>
+        </section>
+
+        <!-- Sección: Conquista y Colonia -->
+        <section id="conquista">
+            <h2>Conquista y Época Colonial</h2>
+            <p>En 1519 arribaron los expedicionarios españoles liderados por Hernán Cortés. Tras años de enfrentamientos y alianzas con pueblos indígenas, se consumó la caída de Tenochtitlan en 1521. Comenzó así un periodo de casi 300 años bajo el dominio del Imperio Español.</p>
+            <img src="img/conquista.jpg" alt="Representación de la llegada de los españoles" class="imagen">
+            <p>Durante esta etapa se mezclaron culturas, lenguas, religiones y tradiciones, dando origen a la identidad mestiza que caracteriza al país. Se fundaron ciudades, se construyeron catedrales y se estableció una nueva organización social y económica.</p>
+        </section>
+
+        <!-- Sección: Independencia -->
+        <section id="independencia">
+            <h2>La Independencia de México</h2>
+            <p>La lucha por la independencia comenzó el 16 de septiembre de 1810 con el llamado a levantarse en armas por parte del sacerdote Miguel Hidalgo y Costilla, en el pueblo de Dolores. Tras 11 años de guerra, en 1821 se firmaron los Tratados de Córdoba, consumando la independencia.</p>
+            <img src="img/independencia.jpg" alt="Imagen alusiva al Grito de Dolores" class="imagen">
+            <p>Figuras como José María Morelos, Vicente Guerrero y Agustín de Iturbide fueron protagonistas clave de este proceso histórico que dio paso a la creación de la nación mexicana.</p>
+        </section>
+
+        <!-- Sección: Siglo XIX -->
+        <section id="siglo-xix">
+            <h2>El Siglo XIX: Formación de la Nación</h2>
+            <p>Una vez independiente, México atravesó años de gran inestabilidad política y económica. Hubo conflictos internos, guerras con otros países, la pérdida de más de la mitad de su territorio en 1848 y la intervención francesa que llevó a la instauración del Segundo Imperio Mexicano.</p>
+            <img src="img/constitucion_1857.jpg" alt="Imagen de la Constitución de 1857" class="imagen">
+            <p>Finalmente, con la restauración de la República en 1867 y el gobierno de Porfirio Díaz, se inició una etapa de orden y crecimiento, aunque con fuertes desigualdades sociales.</p>
+        </section>
+
+        <!-- Sección: Revolución -->
+        <section id="revolucion">
+            <h2>La Revolución Mexicana</h2>
+            <p>En 1910 estalló la Revolución Mexicana, un movimiento social y armado que buscaba poner fin a la dictadura de Porfirio Díaz y lograr justicia social, reparto de tierras y mejores condiciones de vida para el pueblo.</p>
+            <img src="img/revolucion.jpg" alt="Imagen histórica de la Revolución Mexicana" class="imagen">
+            <p>Liderada por figuras como Francisco I. Madero, Emiliano Zapata y Pancho Villa, este movimiento transformó profundamente al país. Su mayor logro fue la promulgación de la Constitución de 1917, que sigue vigente hoy en día.</p>
+        </section>
+
+        <!-- Sección: México Actual -->
+        <section id="mexico-actual">
+            <h2>México en la Actualidad</h2>
+            <p>En la actualidad, México es una república federal compuesta por 32 entidades. Cuenta con una gran riqueza cultural, natural y humana, reconocida mundialmente por su gastronomía, sus tradiciones, su música y su historia.</p>
+            <img src="img/mexico_actual.jpg" alt="Paisaje y cultura de México hoy" class="imagen">
+            <p>Es una de las economías más importantes de América Latina y sigue construyendo su futuro sobre la base de su vasta herencia histórica y la diversidad de su gente.</p>
+        </section>
+
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Historia de México | Página informativa y educativa | Hecho por: Miriam Perez Santiago</p>
+    </footer>
+
+</body>
+</html>
